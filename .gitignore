@@ -6,4 +6,5 @@ wxcomponents/**/*.vue
 wxcomponents/**/*.css
 .project
 .DS_Store
+*.zip
 
