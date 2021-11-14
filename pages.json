@@ -1,0 +1,84 @@
+{
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [
+        {
+            "path": "pages/video/video",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "pages/video/detail",
+            "style": {
+                "navigationBarTitleText": "详情",
+                "navigationStyle": "default"
+            }
+        },
+        {
+            "path": "pages/video/play",
+            "style": {
+                "navigationBarTitleText": "播放",
+                "navigationStyle": "default",
+                "navigationBarTextStyle": "white",
+                "transparentTitle": "auto",
+                "pageOrientation": "landscape"
+            }
+        },
+        {
+            "path": "pages/video/webview",
+            "style": {
+                "navigationBarTitleText": "云播",
+                "navigationBarTextStyle": "white",
+                "navigationStyle": "default",
+                "transparentTitle": "auto",
+                "pageOrientation": "landscape"
+            }
+        },
+        {
+            "path": "pages/video/search",
+            "style": {
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/back/back",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
+    "globalStyle": {
+        "pageOrientation": "auto",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "navigationStyle": "custom",
+        "app-plus": {
+            "background": "#efeff4",
+            "bounce": "none"
+        }
+        ,"rpxCalcMaxDeviceWidth": 9999 // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+        ,"rpxCalcBaseDeviceWidth": 750 // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+        // ,"rpxCalcIncludeWidth": 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+    },
+    "condition": { //模式配置，仅开发期间生效
+        "current": 0, //当前激活的模式(list 的索引项)
+        "list": [
+            {
+                "name": "", //模式名称
+                "path": "", //启动页面，必选
+                "query": "" //启动参数，在页面的onLoad函数里面得到
+            },
+            {
+                "name": "1", //模式名称
+                "path": "pages/video/video", //启动页面，必选
+                "query": "" //启动参数，在页面的onLoad函数里面得到
+            }
+        ]
+    }
+}

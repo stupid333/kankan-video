@@ -1,0 +1,9 @@
+unpackage/
+unpackage
+node_modules/
+node_modules
+wxcomponents/**/*.vue
+wxcomponents/**/*.css
+.project
+.DS_Store
+
