@@ -416,7 +416,9 @@ function getQueryString (name, url) {
 
 module.exports = {
   ...systemInfo,
+  // #ifdef APP-PLUS
   channel,
+  // #endif
   isDev,
   getOnlineTime,
   checkSource,

@@ -1,4 +1,6 @@
 // 引入 uni-ajax 模块
+import Vue from 'vue'
+
 import ajax from '@/uni_modules/u-ajax/js_sdk'
 import { hideLoading, toast } from './util.js'
 // 创建实例
